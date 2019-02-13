@@ -84,6 +84,7 @@ def self.find_by_name(name)
        self.find_by_id(id)
   else
     self.new(dog_hash)
+    binding.pry
   end
  end
 
