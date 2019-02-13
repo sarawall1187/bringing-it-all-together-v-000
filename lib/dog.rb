@@ -92,7 +92,7 @@ def self.find_by_name(name)
    if !result.empty?
        self.find_by_id(id)
   else
-    self.create(dog_hash)
+    self.create(dog_ha)
   end
  end
 
