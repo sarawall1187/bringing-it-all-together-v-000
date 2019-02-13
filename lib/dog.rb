@@ -90,9 +90,9 @@ def self.find_by_name(name)
   SQL
   result = DB[:conn].execute(sql, name, breed)
    if !result.empty?
-       self.find_by_id(id)
+       self.find_by_id(result)
   else
-    self.create(dog_ha)
+    self.create(dog_hash)
   end
  end
 
