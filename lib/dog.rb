@@ -85,7 +85,7 @@ def self.find_by_name(name)
   sql = <<-SQL
   SELECT *
   FROM dogs
-  WHERE name = ? and
+  WHERE name = ? AND
   breed = ?
   SQL
    DB[:conn].execute(sql, name, breed)
