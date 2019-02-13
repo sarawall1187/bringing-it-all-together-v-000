@@ -79,9 +79,9 @@ def self.find_by_name(name)
     end.first
  end
 
- def self.find_or_create_by(id)
+ def self.find_or_create_by(dog_hash)
  binding.pry
-   if self.id
+   if dog_hash ==
 
      self.find_by_id(id)
    end
