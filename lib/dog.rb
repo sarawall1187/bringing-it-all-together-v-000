@@ -83,8 +83,8 @@ def self.find_by_name(name)
   name = dog_hash[:name]
   breed = dog_hash[:breed]
   sql = <<-SQL
-  SELECT * 
-  FROM dogs 
+  SELECT *
+  FROM dogs
   WHERE name = ?
   breed = ?
   SQL
