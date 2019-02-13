@@ -80,11 +80,14 @@ def self.find_by_name(name)
  end
 
  def self.find_or_create_by(dog_hash)
+  name = dog_hash.name 
+  breed = dog_hash.breed
+   sql = ""
    if @id != nil
        self.create(dog_hash)
   else
     self.new(dog_hash)
-    # binding.pry
+    binding.pry
   end
  end
 
