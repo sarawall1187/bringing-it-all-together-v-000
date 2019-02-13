@@ -80,9 +80,8 @@ def self.find_by_name(name)
  end
 
  def self.find_or_create_by(dog_hash)
-  name = dog_hash.name
-  breed = dog_hash.breed
-    binding.pry
+  name = dog_hash[:name]
+  breed = dog_hash[:breed]
    if @id != nil
        self.create(dog_hash)
   else
