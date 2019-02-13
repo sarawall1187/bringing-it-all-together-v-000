@@ -87,7 +87,7 @@ def self.find_by_name(name)
        self.create(dog_hash)
   else
     self.new(dog_hash)
-  
+
   end
  end
 
