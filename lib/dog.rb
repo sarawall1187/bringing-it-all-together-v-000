@@ -89,7 +89,6 @@ def self.find_by_name(name)
   breed = ?
   SQL
   result = DB[:conn].execute(sql, name, breed)
-  binding.pry
    if !result.empty?
        self.find_by_id(id)
   else
