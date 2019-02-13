@@ -80,7 +80,7 @@ def self.find_by_name(name)
 
  def self.find_or_create_by(row)
     if self.id
-      self.save
+      self.update
     else
       self.new_from_db(row)
     end
