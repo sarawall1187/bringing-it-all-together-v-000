@@ -88,7 +88,7 @@ def self.find_by_name(name)
   WHERE name = ? AND
   breed = ?
   SQL
-   DB[:conn].execute(sql, name, breed)
+  @id = DB[:conn].execute(sql, name, breed)[0][0]
    if @id != nil
        self.create(dog_hash)
   else
