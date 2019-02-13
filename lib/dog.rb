@@ -79,8 +79,8 @@ def self.find_by_name(name)
  end
 
  def self.find_or_create_by(row)
-    if self.find_by_id(id) == self.id
-      self
+    if self.id
+      self.save
     else
       self.new_from_db(row)
     end
