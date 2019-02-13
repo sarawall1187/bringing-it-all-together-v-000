@@ -85,6 +85,7 @@ def self.find_by_name(name)
   else
     self.new(dog_hash)
    end
+   self
  end
 
 end
