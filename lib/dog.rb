@@ -83,7 +83,7 @@ def self.find_by_name(name)
    if @id == nil
     self.new(dog_hash)
   else
-     @name == self.find_by_name(dog_hash)
+    self.find_by_name(dog_hash)
    end
  end
 
