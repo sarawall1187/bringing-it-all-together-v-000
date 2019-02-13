@@ -78,7 +78,7 @@ def self.find_by_name(name)
     end.first
  end
 
- def self.find_or_create_by(id:)
+ def self.find_or_create_by(id)
    if self.id
      self.find_by_id(id:)
    end
